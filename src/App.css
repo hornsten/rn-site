@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
 .App {
   text-align: center;
+  background: url(./images/space-4984262_1920.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.head {
+  height: 70vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +21,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +28,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5vw;
 }
 
 .App-link {
