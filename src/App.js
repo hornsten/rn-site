@@ -1,4 +1,5 @@
 import head from './images/rn_head.png';
+import Head from './Head/Head.js';
 import './App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Rolling Numbers</h1>
-        <img src={head} className="head"></img>
+       <Head></Head>
       </header>
     </div>
   );

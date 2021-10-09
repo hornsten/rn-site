@@ -1,0 +1,57 @@
+.Head {
+    background-image: url('../images/rn_head.png');
+    height: 75vh;
+    width: 75vh;
+    background-size: cover;
+   
+}
+.Brain {
+    -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform: rotate(
+21deg);
+    width: 50vh;
+    height: 40vh;
+    position: absolute;
+    margin-left: 17vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic {
+    /* border: 1px solid rgb(163, 160, 160); */
+    flex: auto;
+    height:10vh;
+    width: 10vh;
+}
+
+.arrowBg {
+    filter: drop-shadow(2px 0px 0px black)
+            drop-shadow(-2px 0px 0px black)
+            drop-shadow(0px 2px 0px black)
+            drop-shadow(0px -2px 0px black)
+            drop-shadow(2px 2px 0px black)
+            drop-shadow(-2px -2px 0px black)
+            drop-shadow(-2px 2px 0px black)
+            drop-shadow(2px -2px 0px black);
+  }
+
+.pic1, .pic3, .pic5,.pic7 {
+    background-image: url('https://www.fillmurray.com/200/200');
+    clip-path: polygon(0.92% 73.75%,14.58% 89.62%,39.42% 99.37%,84.33% 95.75%,98.17% 9.88%,22.33% 1.88%);
+    height:100%;
+    width: 100%;
+}
+.pic2, .pic4, .pic6, .pic8 {
+    background-image: url('https://picsum.photos/200/100');
+    clip-path: polygon(2.92% 89.75%,18.58% 99.62%,39.42% 99.37%,94.58% 92.25%,100.67% 0.88%,-0.17% 0.13%);
+    height:20vh;
+    width: 20vh;
+}
+.pic9, .pic10, .pic11, .pic12 {
+   clip-path: polygon(0.92% 73.75%,14.58% 89.62%,39.42% 99.37%,84.33% 95.75%,98.17% 9.88%,22.33% 1.88%);
+    height:20vh;
+    width: 20vh;
+    background: green;
+}
