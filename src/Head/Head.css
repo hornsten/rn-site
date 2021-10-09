@@ -8,50 +8,149 @@
 .Brain {
     -webkit-clip-path: ellipse(50% 50% at 50% 50%);
     clip-path: ellipse(50% 50% at 50% 50%);
-    transform: rotate(
-21deg);
+    transform: rotate(21deg);
     width: 50vh;
     height: 40vh;
     position: absolute;
     margin-left: 17vh;
-    margin-top: 8vh;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 7vh;
+    display: grid;
+	grid-template-rows: 0.35fr 0.35fr 0.3fr;
+    background-color: #000;
+}
+[class^="panel-"] {
+	background-color: #000;
+    transition: clip-path 1s;
 }
 
-.pic {
-    /* border: 1px solid rgb(163, 160, 160); */
-    flex: auto;
-    height:10vh;
-    width: 10vh;
-}
-
-.arrowBg {
-    filter: drop-shadow(2px 0px 0px black)
-            drop-shadow(-2px 0px 0px black)
-            drop-shadow(0px 2px 0px black)
-            drop-shadow(0px -2px 0px black)
-            drop-shadow(2px 2px 0px black)
-            drop-shadow(-2px -2px 0px black)
-            drop-shadow(-2px 2px 0px black)
-            drop-shadow(2px -2px 0px black);
-  }
-
-.pic1, .pic3, .pic5,.pic7 {
-    background-image: url('https://www.fillmurray.com/200/200');
-    clip-path: polygon(0.92% 73.75%,14.58% 89.62%,39.42% 99.37%,84.33% 95.75%,98.17% 9.88%,22.33% 1.88%);
-    height:100%;
+[class^="panel-"] img {
     width: 100%;
+		height: 100%;
+		object-fit: cover;
+        transition: clip-path 1s;
 }
-.pic2, .pic4, .pic6, .pic8 {
-    background-image: url('https://picsum.photos/200/100');
-    clip-path: polygon(2.92% 89.75%,18.58% 99.62%,39.42% 99.37%,94.58% 92.25%,100.67% 0.88%,-0.17% 0.13%);
-    height:20vh;
-    width: 20vh;
+.panelgroup-1 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-row: 1 / span 2;
+	grid-column: 1;
 }
-.pic9, .pic10, .pic11, .pic12 {
-   clip-path: polygon(0.92% 73.75%,14.58% 89.62%,39.42% 99.37%,84.33% 95.75%,98.17% 9.88%,22.33% 1.88%);
-    height:20vh;
-    width: 20vh;
-    background: green;
+.panel-1 {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	clip-path: polygon(0 0, 50% 0, 60.00% 100.00%, 0 100%);	
+}
+.panel-1 img {
+    clip-path: polygon(0 0, 48% 0, 57% 100%, 0 100%);
+}
+.panel-2 {
+	grid-row: 1;
+	grid-column: 2 / span 2;
+	clip-path: polygon(0 0, 50% 0, 58% 100%, 10% 100%);
+	z-index: 1;
+}
+.panel-2 img {
+    clip-path: polygon(0 0, 48.5% 0, 56% 100%, 10% 100%);
+}
+.panel-3 {
+	grid-row: 1;
+	grid-column: 3;
+}
+.panel-3 img {
+    clip-path: polygon(0 0, 136% 0, 66% 100%, 0 100%);
+}
+
+.panel-4 {
+	grid-row: 1;
+	grid-column: 3 / 5;
+	clip-path: polygon(83px -83px, 400px 38px, 200px 493px, 66px 347px);
+	
+	
+}
+.panel-4 img {
+    clip-path: polygon(101px 0px, 192px 0px, 262px 235px, -230px 120px);
+}
+
+.panel-5 {
+	grid-row: 1;
+	grid-column: 4 / -1;
+	clip-path: polygon(48% 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+.panel-6 {
+	grid-row: 1;
+	grid-column: 5;
+	clip-path: polygon(100% 37%, 100% 100%, 16% 100%);
+}
+.panelgroup-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 1.4fr 0.8fr 1fr 1.7fr;
+	grid-template-rows: 2.5fr repeat(2, 1fr) 1.6fr;
+	grid-row: 2 / span 2;
+	grid-column: 1;
+	z-index: 3;
+}
+panelgroup-2:hover {
+    display: block;
+}
+
+.panel-7 {
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+	clip-path: ellipse(360px 370px at 340px 372px);
+}
+.panel-7 img {
+    clip-path: ellipse(354px 364px at 340px 372px);
+}
+
+.panel-8 {
+	grid-row: 1 / -1;
+	grid-column: 2 / -1;
+	clip-path: ellipse(271px 279px at 273px 410px);
+}
+.panel-8 img {
+    clip-path: ellipse(267px 275px at 273px 410px);
+}
+
+.panel-9 {
+	grid-row: 2 / -1;
+	grid-column: 3 / -1;
+	clip-path: ellipse(250px 213px at 251px 215px);
+}
+.panel-9 img {
+    clip-path: ellipse(246px 209px at 251px 215px);
+}
+
+.panel-10 {
+	grid-row: 3 / -1;
+	grid-column: 4 / -1;
+	clip-path: ellipse(176px 159px at 177px 161px);
+}
+.panel-10 img {
+    clip-path: ellipse(172px 155px at 177px 161px);
+}
+
+.panel-11 {
+	grid-row: 4 / -1;
+	grid-column: 5 / -1;
+	clip-path: ellipse(112px 92px at 114px 96px);
+}
+.panel-11 img {
+    clip-path: ellipse(108px 88px at 114px 96px);
+}
+
+.panel-12 {
+	grid-row: 4 / -1;
+	grid-column: 6 / -1;
+	clip-path: circle(80px at 82px 100px);
+}
+.panel-12 img {
+    clip-path: circle(76px at 82px 100px);
+}
+
+.panel-13 {
+	grid-row: 4 / -1;
+	grid-column: 6 / -1;
+	clip-path: circle(61px at 109px 106px);
+	background-color: white;
 }

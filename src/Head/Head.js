@@ -4,57 +4,50 @@ function Head() {
 
   var imageArray = ['https://www.fillmurray.com/200/300','https://www.fillmurray.com/100/361'];
   return (
-    <div className="Head arrowBg">
+    <div className="Head">
         <div className="Brain">
-          <div class="pic arrowBg">
-          <div className="pic1"></div>
+          <div className="panelgroup-1">
+            <div className="panel-1">
+              <img src='https://images.unsplash.com/photo-1455145914126-c357157e2db0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-2">
+              <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-3">
+              <img src='https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-4">
+              <img src='https://images.unsplash.com/photo-1507984211203-76701d7bb120?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-5">
+              <img src='https://images.unsplash.com/photo-1500259571355-332da5cb07aa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-6">
+              <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
           </div>
-          <div class="pic arrowBg">
-          <div className="pic2"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic3"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic4"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic5"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic6"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic7"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic8"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic9"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic10"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic11"></div>
-          </div>
-          <div class="pic arrowBg">
-          <div className="pic12"></div>
-          </div>
-            {/* <div className="pic1"></div>
-            <div className="pic2"></div>
-            <div className="pic3"></div>
-            <div className="pic4"></div>
-            <div className="pic5"></div>
-            <div className="pic6"></div>
-            <div className="pic7"></div>
-            <div className="pic8"></div>
-            <div className="pic9"></div>
-            <div className="pic10"></div>
-            <div className="pic11"></div>
-            <div className="pic12"></div> */}
-        </div>
+          <div className="panelgroup-2">
+            <div className="panel-7">
+              <img src='https://images.unsplash.com/photo-1542736143-29a8432162bc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-8">
+              <img src='https://images.unsplash.com/photo-1508927415581-538b97647924?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-9">
+              <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-10">
+              <img src='https://images.unsplash.com/photo-1531425300797-d5dc8b021c84?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-11">
+              <img src='https://images.unsplash.com/photo-1447969025943-8219c41ea47a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-12">
+              <img src='https://images.unsplash.com/photo-1502083896352-259ab9e342d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+            </div>
+            <div className="panel-13"></div>
+	        </div>
+      </div>
     </div>
   );
 }
