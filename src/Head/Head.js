@@ -1,4 +1,5 @@
 import './Head.css';
+import everything from '../images/Everything.png'
 
 function Head() {
 
@@ -8,9 +9,9 @@ function Head() {
         <div className="Brain">
           <div className="panelgroup-1">
             <div className="panel-1">
-              <img src='https://images.unsplash.com/photo-1455145914126-c357157e2db0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
-            </div>
-            <div className="panel-2">
+              {/* <img  src={everything} alt=''></img> */}
+            </div> 
+            {/* <div className="panel-2">
               <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
             </div>
             <div className="panel-3">
@@ -24,9 +25,9 @@ function Head() {
             </div>
             <div className="panel-6">
               <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
-            </div>
+            </div> */}
           </div>
-          <div className="panelgroup-2">
+          {/* <div className="panelgroup-2">
             <div className="panel-7">
               <img src='https://images.unsplash.com/photo-1542736143-29a8432162bc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
             </div>
@@ -46,7 +47,7 @@ function Head() {
               <img src='https://images.unsplash.com/photo-1502083896352-259ab9e342d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
             </div>
             <div className="panel-13"></div>
-	        </div>
+	        </div> */}
       </div>
     </div>
   );
