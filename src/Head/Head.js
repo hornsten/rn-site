@@ -7,10 +7,19 @@ function Head() {
   return (
     <div className="Head">
         <div className="Brain">
-          <div className="panelgroup-1">
-            <div className="panel-1">
+          {/* <div className="panelgroup-1"> */}
+            <div className="ev-panel">
               {/* <img  src={everything} alt=''></img> */}
             </div> 
+            <div className="isyimd-panel">
+              {/* <img  src={everything} alt=''></img> */}
+            </div> 
+            <div className="moy-panel">
+              {/* <img  src={everything} alt=''></img> */}
+            </div> 
+            <div className="bright-panel">
+              {/* <img  src={everything} alt=''></img> */}
+            </div>            
             {/* <div className="panel-2">
               <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
             </div>
@@ -26,7 +35,7 @@ function Head() {
             <div className="panel-6">
               <img src='https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
             </div> */}
-          </div>
+          {/* </div> */}
           {/* <div className="panelgroup-2">
             <div className="panel-7">
               <img src='https://images.unsplash.com/photo-1542736143-29a8432162bc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>

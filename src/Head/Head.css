@@ -9,19 +9,33 @@
     -webkit-clip-path: ellipse(50% 50% at 50% 50%);
     clip-path: ellipse(50% 50% at 50% 50%);
     /* transform: rotate(21deg); */
-    width: 50vh;
-    height: 40vh;
+    width: 53vh;
+    height: 43vh;
     position: absolute;
-    margin-left: 17vh;
-    margin-top: 7vh;
+    margin-left: 15vh;
+    margin-top: 6vh;
     display: grid;
 	/* grid-template-rows: 0.35fr 0.35fr 0.3fr; */
 }
-[class^="panel-"] {
+[class^="ev-panel-"] {
 	/* background-color: #000; */
     transition: clip-path 1s;
 }
 
+[class^="isyimd-panel-"] {
+	/* background-color: #000; */
+    transition: clip-path 1s;
+}
+
+[class^="moy-panel-"] {
+	/* background-color: #000; */
+    transition: clip-path 1s;
+}
+
+[class^="bright-panel-"] {
+	/* background-color: #000; */
+    transition: clip-path 1s;
+}
 /* [class^="panel-"] img {
     	width: 50%;
 		height: 50%;
@@ -34,19 +48,58 @@
 	grid-row: 1 / span 2;
 	grid-column: 1;
 }
-.panel-1 {
+.ev-panel {
 	grid-row: 1;
 	grid-column: 2 / span 2;
-	clip-path: polygon(39.87% 48.6%, 57.73% 50.05%, 78.81% 53.39%, 90.47% 54.59%, 98.47% 56.77%, 93.18% 70.08%, 89.52% 82.61%, 85.48% 96.61%, 64.96% 92.79%, 39.5% 89.37%, 21.54% 85.56%, 3.22% 76.84%, -2px 62.63%, 9.62% 54.33%, 20.02% 48.24%);
+	clip-path: polygon(38.16% 1.56%, 57.23% 4.94%, 71.82% 7.22%, 85.84% 9.25%, 95.44% 11.42%, 92.33% 27.05%, 86.89% 46.06%, 83.21% 60.76%, 63.5% 59.47%, 42.04% 56.07%, 22.15% 51.68%, 3.71% 43.56%, -5px 23.57%, 7.64% 14.08%, 20.77% 2.12%);
 	background-image: url('../images/Everything.png');
 	background-size: contain;
 	position: relative;
-	top: 10vh;
-	height: 75%;
-	width: 75%;
-	left: 2vh;
+	top: 25vh;
+	height: 55%;
+	width: 55%;
+	left: -1.5vh;
 }
-.panel-1 img {
+
+.isyimd-panel {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	clip-path: polygon(43.71% 3.55%, 60.89% 5.36%, 78.94% 6.03%, 93.66% 10.84%, 91.16% 24.55%, 82.34% 40.59%, 71.88% 57.1%, 54.94% 74.99%, 38.29% 71.26%, 17.84% 65.67%, 2.41% 55.13%, 5.14% 38.36%, 16px 20.43%, 24.93% 5.25%);
+	background-image: url('../images/ISYIMD.jpg');
+	background-size: contain;
+	position: relative;
+	top: 12vh;
+	height: 40%;
+	width: 40%;
+	left: 0.5vh;
+}
+
+.moy-panel {
+	grid-row: 1;
+	grid-column: 2 / span 1;
+	clip-path: polygon(69.36% 5.64%, 87.49% 7.75%, 101.38% 10.31%, 95.32% 17.79%, 88.97% 24.29%, 79.51% 30.51%, 67.69% 36.37%, 53.4% 41.64%, 39.52% 36.58%, 12.73% 32.69%, 24.41% 25.54%, 43px 19.56%, 45.1% 12.12%, 52.71% 3.31%);
+	background-image: url('../images/moy.jpg');
+	background-size: contain;
+	position: relative;
+	top: 13vh;
+	height: 90%;
+	width: 90%;
+	left: -11vh;
+}
+
+.bright-panel {
+	grid-row: 1;
+	grid-column: 2 / span 2;
+	clip-path: polygon(63.8% 23.58%, 84.81% 28.97%, 102.29% 33%, 99.49% 42.86%, 97.43% 56.35%, 95.79% 70.08%, 74.53% 65.59%, 48.15% 61.13%, 21.36% 56.98%, -1.47% 56.17%, 7.2% 41.94%, 12.2% 29.05%, 17.51% 11.87%, 41.6% 17.18%);
+	background-image: url('../images/bright.jpg');
+	background-size: contain;
+	position: relative;
+	top: 15vh;
+	height: 40%;
+	width: 40%;
+	left: 3.5vh;
+}
+.ev-panel img {
     /* clip-path: polygon(0 0, 48% 0, 57% 100%, 0 100%); */
 }
 .panel-2 {
