@@ -3,8 +3,12 @@ import everything from '../images/Everything.png'
 
 function Head() {
 
-  var imageArray = ['https://www.fillmurray.com/200/300','https://www.fillmurray.com/100/361'];
+  function expandImage() {
+    console.log("Woah, it grew!");
+  }
+
   return (
+    
     <div className="Head">
         <div className="Brain">
           {/* <div className="panelgroup-1"> */}
