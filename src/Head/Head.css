@@ -6,8 +6,7 @@
    
 }
 .Brain {
-    -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-    clip-path: ellipse(50% 50% at 50% 50%);
+    clip-path: polygon(46.44% -0.8%, 77.81% 10.08%, 97.15% 37.24%, 97.66% 70.32%, 80% 94.8%, 55.45% 92%, 28.57% 79.44%, 29.35% 69.41%, 23.38% 64.24%, 17.54% 59.72%, 11.07% 60.35%, 2.59% 58.16%, 2.85% 36.28%, 11.55% 20.56%, 20% 10%);
     width: 53vh;
     height: 43vh;
     position: absolute;
@@ -68,4 +67,15 @@
 	width: 45%;
 	left: 3vh;
 }
+
+.arrowBg {
+    filter: drop-shadow(3px 0px 0px black)
+            drop-shadow(-3px 0px 0px black)
+            drop-shadow(0px 3px 0px black)
+            drop-shadow(0px -3px 0px black)
+            drop-shadow(3px 3px 0px black)
+            drop-shadow(-3px -3px 0px black)
+            drop-shadow(-3px 3px 0px black)
+            drop-shadow(3px -3px 0px black);
+  }
 

@@ -8,10 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Rolling Numbers</h1>
+        <Head></Head>
       </header>
-       <Head></Head>
-       <Toggle></Toggle>
-      
     </div>
   );
 }
