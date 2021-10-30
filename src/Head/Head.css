@@ -14,14 +14,14 @@
     margin-top: 6vh;
     display: flex;
     flex-flow: column wrap;
-    align-content: stretch;
+    align-content: flex-start;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-start;
     counter-reset: items;
-    height: 38vh;
+    height: 41vh;
     width: 55vh;
     transform: skewX(-11deg);
-    clip-path: polygon(46.44% -0.8%, 76.03% 13.96%, 92.56% 41.83%, 93.33% 76.67%, 75.42% 106.08%, 38.13% 95.53%, 28.57% 79.44%, 25.53% 72.58%, 18.03% 68.12%, 13.46% 64.66%, 6.48% 60.7%, 0.55% 49.69%, 2.85% 36.28%, 11.55% 20.56%, 20% 10%);
+    clip-path: polygon(63.04% 9.27%, 76.9% 19.33%, 87.32% 35.46%, 92.24% 51.51%, 93.72% 62.87%, 93.22% 74.14%, 85.78% 93.53%, 75.19% 104.41%, 45.34% 90.16%, 35.56% 82.46%, 30.34% 69.56%, 21.53% 63.09%, 10.98% 59.17%, 4.94% 56.27%, 1.02% 47.28%, 4.48% 30.57%, 11.81% 14.8%, 26.4% 4.12%, 47.08% 2.29%);
 }
 
 
