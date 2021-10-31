@@ -20,7 +20,7 @@ function SongButton(props) {
       width: isToggled ? '100%' : props.width,
       position: isToggled ? 'relative' : 'absolute',
       top: isToggled ? '0%' : props.top,
-      right: isToggled ? '0%' : props.right,
+      left: isToggled ? '0%' : props.left,
       color: isToggled ? '#fff' : 'transparent'
     });
     return (

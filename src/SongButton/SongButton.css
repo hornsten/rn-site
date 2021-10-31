@@ -12,6 +12,10 @@
     background-image: url('../images/ISYIMD.jpg');
   }
 
+  #moy {
+    background-image: url('../images/moy.jpg');
+  }
+
   .arrowBg {
     filter: drop-shadow(2px 0px 0px black)
             drop-shadow(-2px 0px 0px black)
