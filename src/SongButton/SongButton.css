@@ -1,17 +1,15 @@
 .item {
-    /* background-color: tomato; */
-    border: 1px solid black;
-    padding: 0;
-    /* Optional */
-    position: relative;
-    color: #fff;
-    box-sizing: border-box;
-    flex-grow: 1;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   }
   
-  .item::before {
-    counter-increment: items;
-    content: counter(items);
+  #muse {
+    background-image: url('../images/Everything.png');
+  }
+
+  #isyimd {
+    background-image: url('../images/ISYIMD.jpg');
   }
 
   .arrowBg {
