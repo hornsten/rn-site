@@ -1,0 +1,30 @@
+.item {
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+  #muse {
+    background-image: url('../images/Everything.png');
+  }
+
+  #isyimd {
+    background-image: url('../images/ISYIMD.jpg');
+  }
+
+  .arrowBg {
+    filter: drop-shadow(2px 0px 0px black)
+            drop-shadow(-2px 0px 0px black)
+            drop-shadow(0px 2px 0px black)
+            drop-shadow(0px -2px 0px black)
+            drop-shadow(2px 2px 0px black)
+            drop-shadow(-2px -2px 0px black)
+            drop-shadow(-2px 2px 0px black)
+            drop-shadow(2px -2px 0px black);
+  }
+  
+  /* Re-order items into 4 rows
+  .item:nth-of-type(4n+1) { order: 1; }
+  .item:nth-of-type(4n+2) { order: 2; }
+  .item:nth-of-type(4n+2) { order: 3; }
+  .item:nth-of-type(4n)   { order: 4; } */

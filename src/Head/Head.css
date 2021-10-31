@@ -6,66 +6,15 @@
    
 }
 .Brain {
-    -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-    clip-path: ellipse(50% 50% at 50% 50%);
-    width: 53vh;
-    height: 43vh;
     position: absolute;
-    margin-left: 15vh;
-    margin-top: 6vh;
-    display: grid;
+    height: 100%;
+    width: 100%;
+    clip-path: 'polygon(67.29% 7.59%, 80.4% 19.67%, 88.57% 34.12%, 92.49% 46.48%, 93.22% 62.53%, 90.97% 73.8%, 82.03% 92.86%, 68.44% 99.38%, 55.71% 96.70%, 43.84% 94.19%, 33.06% 85.81%, 28.34% 72.91%, 19.53% 62.42%, 6.48% 59.84%, 1.94% 51.91%, 5.02% 36.21%, 13.98% 18.49%, 25.82% 8.09%, 40.16% 3.11%, 55.58% 2.96%';
 }
-
-
-.ev-panel {
-	grid-row: 1;
-	grid-column: 2 / span 2;
-	clip-path: polygon(38.16% 1.56%, 57.23% 4.94%, 71.82% 7.22%, 85.84% 9.25%, 95.44% 11.42%, 92.33% 27.05%, 86.89% 46.06%, 83.21% 60.76%, 63.5% 59.47%, 42.04% 56.07%, 22.15% 51.68%, 3.71% 43.56%, -5px 23.57%, 7.64% 14.08%, 20.77% 2.12%);
-	background-image: url('../images/Everything.png');
-	background-size: contain;
-	position: relative;
-	top: 25vh;
-	height: 55%;
-	width: 55%;
-	left: -1.5vh;
+.BrainContainer {
+  height: 42vh;
+  width: 55vh;
+  margin-top: 6vh;
+  margin-left: 15vh;
+  position: absolute;
 }
-
-.isyimd-panel {
-	grid-row: 1;
-	grid-column: 1 / span 2;
-	clip-path: polygon(43.71% 3.55%, 60.89% 5.36%, 78.94% 6.03%, 93.66% 10.84%, 91.16% 24.55%, 82.34% 40.59%, 71.88% 57.1%, 54.94% 74.99%, 38.29% 71.26%, 17.84% 65.67%, 2.41% 55.13%, 5.14% 38.36%, 16px 20.43%, 24.93% 5.25%);
-	background-image: url('../images/ISYIMD.jpg');
-	background-size: contain;
-	position: relative;
-	top: 12vh;
-	height: 40%;
-	width: 40%;
-	left: 0.5vh;
-}
-
-.moy-panel {
-	grid-row: 1;
-	grid-column: 2 / span 1;
-	clip-path: polygon(69.36% 5.64%, 87.49% 7.75%, 101.38% 10.31%, 95.32% 17.79%, 88.97% 24.29%, 79.51% 30.51%, 67.69% 36.37%, 53.4% 41.64%, 39.52% 36.58%, 12.73% 32.69%, 24.41% 25.54%, 43px 19.56%, 45.1% 12.12%, 52.71% 3.31%);
-	background-image: url('../images/moy.jpg');
-	background-size: contain;
-	position: relative;
-	top: 13vh;
-	height: 90%;
-	width: 90%;
-	left: -11vh;
-}
-
-.bright-panel {
-	grid-row: 1;
-	grid-column: 2 / span 2;
-	clip-path: polygon(54.27% 24.23%, 76.08% 29.62%, 91.18% 33.65%, 89.96% 44.81%, 89.49% 55.7%, 87.85% 67.46%, 71.36% 63.63%, 47.36% 59.17%, 22.95% 55.02%, 0.12% 54.87%, 8.79% 41.94%, 14.57% 28.40%, 19.89% 15.13%, 36.84% 19.8%);
-	background-image: url('../images/bright.jpg');
-	background-size: contain;
-	position: relative;
-	top: 14vh;
-	height: 45%;
-	width: 45%;
-	left: 3vh;
-}
-
