@@ -36,6 +36,22 @@
     background-image: url('../images/highwaysigns.jpg');
   }
 
+  #righton {
+    background-image: url('../images/righton.jpg');
+  }
+
+  #imready {
+    background-image: url('../images/imready.jpg');
+  }
+
+  #lazyriver {
+    background-image: url('../images/lazyriver.jpg');
+  }
+
+  #procrastinator {
+    background-image: url('../images/procrastinator.jpg');
+  }
+
   .arrowBg {
     filter: drop-shadow(2px 0px 0px black)
             drop-shadow(-2px 0px 0px black)
