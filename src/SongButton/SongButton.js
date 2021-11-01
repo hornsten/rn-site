@@ -7,6 +7,7 @@ function SongButton(props) {
     const { useState, useEffect } = React;
   const [isToggled, setIsToggled] = useState(false);
   function handleClick(e) {
+    //console.log("do nothing")
       setIsToggled(!isToggled);
   }
   const brainClipPath = 'polygon(67.29% 7.59%, 80.4% 19.67%, 88.57% 34.12%, 92.49% 46.48%, 93.22% 62.53%, 90.97% 73.8%, 82.03% 92.86%, 68.44% 99.38%, 55.71% 96.70%, 43.84% 94.19%, 33.06% 85.81%, 28.34% 72.91%, 19.53% 62.42%, 6.48% 59.84%, 1.94% 51.91%, 5.02% 36.21%, 13.98% 18.49%, 25.82% 8.09%, 40.16% 3.11%, 55.58% 2.96%';
@@ -20,7 +21,7 @@ function SongButton(props) {
       width: isToggled ? '100%' : props.width,
       position: isToggled ? 'relative' : 'absolute',
       top: isToggled ? '0%' : props.top,
-      right: isToggled ? '0%' : props.right,
+      left: isToggled ? '0%' : props.left,
       color: isToggled ? '#fff' : 'transparent'
     });
     return (

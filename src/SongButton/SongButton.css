@@ -5,11 +5,35 @@
   }
   
   #muse {
-    background-image: url('../images/Everything.png');
+    background-image: url('../images/muse.jpg');
   }
 
   #isyimd {
     background-image: url('../images/ISYIMD.jpg');
+  }
+
+  #moy {
+    background-image: url('../images/moy.jpg');
+  }
+
+  #everything {
+    background-image: url('../images/Everything.png');
+  }
+
+  #brightside {
+    background-image: url('../images/bright2.jpg');
+  }
+
+  #pcbh {
+    background-image: url('../images/pcbh.jpg');
+  }
+
+  #ata {
+    background-image: url('../images/ata.jpg');
+  }
+
+  #highwaysigns {
+    background-image: url('../images/highwaysigns.jpg');
   }
 
   .arrowBg {
