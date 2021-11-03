@@ -5,11 +5,11 @@ import ReactSpring, {useSpring, animated, config} from 'react-spring';
 
 
 function Head() {
-  const { useState } = React;
-  const [isHeadToggled, setIsHeadToggled] = useState(false);
-  function handleClick() {
-      setIsHeadToggled(!isHeadToggled);  
-  }
+  // const { useState } = React;
+  // const [isHeadToggled, setIsHeadToggled] = useState(false);
+  // function handleClick() {
+  //     setIsHeadToggled(!isHeadToggled);  
+  // }
 
     const numbers = [
       {
@@ -136,8 +136,8 @@ function Head() {
 
   return (
     
-    <div className="Head" onClick={handleClick}>
-      <div className={isHeadToggled ? "BrainContainer rounded" : "BrainContainer"}>
+    <div className="Head">
+      <div className="BrainContainer">
         <div className="Brain">
           {buttons}
         </div>
