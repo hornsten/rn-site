@@ -2,29 +2,53 @@
   border: none;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
   }
   
   #muse {
-    background-image: url('../images/Everything.png');
+    background-image: url('../images/muse.jpg');
   }
 
   #isyimd {
     background-image: url('../images/ISYIMD.jpg');
   }
 
-  .arrowBg {
-    filter: drop-shadow(2px 0px 0px black)
-            drop-shadow(-2px 0px 0px black)
-            drop-shadow(0px 2px 0px black)
-            drop-shadow(0px -2px 0px black)
-            drop-shadow(2px 2px 0px black)
-            drop-shadow(-2px -2px 0px black)
-            drop-shadow(-2px 2px 0px black)
-            drop-shadow(2px -2px 0px black);
+  #moy {
+    background-image: url('../images/moy.jpg');
   }
-  
-  /* Re-order items into 4 rows
-  .item:nth-of-type(4n+1) { order: 1; }
-  .item:nth-of-type(4n+2) { order: 2; }
-  .item:nth-of-type(4n+2) { order: 3; }
-  .item:nth-of-type(4n)   { order: 4; } */
+
+  #everything {
+    background-image: url('../images/Everything.png');
+  }
+
+  #brightside {
+    background-image: url('../images/bright2.jpg');
+  }
+
+  #pcbh {
+    background-image: url('../images/pcbh.jpg');
+  }
+
+  #ata {
+    background-image: url('../images/ata.jpg');
+  }
+
+  #highwaysigns {
+    background-image: url('../images/highwaysigns.jpg');
+  }
+
+  #righton {
+    background-image: url('../images/righton.jpg');
+  }
+
+  #imready {
+    background-image: url('../images/imready.jpg');
+  }
+
+  #lazyriver {
+    background-image: url('../images/lazyriver.jpg');
+  }
+
+  #procrastinator {
+    background-image: url('../images/procrastinator.jpg');
+  }
