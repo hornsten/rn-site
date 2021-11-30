@@ -1,8 +1,4 @@
 import './Head.css';
-import everything from '../images/Everything.png';
-import isyimd from '../images/ISYIMD.jpg';
-import moy from '../images/moy.jpg';
-import bright from '../images/bright.jpg';
 import React from 'react';
 import SongButton from '../SongButton/SongButton';
 import ReactSpring, {useSpring, animated, config} from 'react-spring';
@@ -11,6 +7,12 @@ import audio from '../mp3s/Everything-Sample.mp3';
 
 
 function Head() {
+  // const { useState } = React;
+  // const [isHeadToggled, setIsHeadToggled] = useState(false);
+  // function handleClick() {
+  //     setIsHeadToggled(!isHeadToggled);  
+  // }
+
     const numbers = [
       {
         id:'isyimd', 
@@ -134,7 +136,7 @@ function Head() {
       }
     ]
     const buttons = numbers.map((number, index) =>
-    <SongButton 
+    <SongButton
     key={number.id}
     clipPath={number.clipPath} 
     name={number.name}

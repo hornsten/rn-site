@@ -1,7 +1,7 @@
 .Head {
     background-image: url('../images/rn_head.png');
-    height: 75vh;
-    width: 75vh;
+    height: 75vmin;
+    width: 75vmin;
     background-size: cover;
    
 }
@@ -9,12 +9,17 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    clip-path: 'polygon(68.22% 6.37%, 81.8% 18.75%, 89.5% 32.59%, 93.66% 46.79%, 93.22% 62.53%, 90.97% 73.8%, 85.3% 87.35%, 76.62% 99.69%, 62.72% 97.31%, 45.48% 93.27%, 31.89% 85.2%, 27.64% 71.38%, 19.53% 62.11%, 6.48% 59.84%, 1.24% 50.07%, 4.09% 36.21%, 11.41% 19.4%, 23.01% 7.17%, 38.52% 1.89%, 54.88% 2.04%)'
+    clip-path: polygon(68.22% 6.37%, 81.8% 18.75%, 89.5% 32.59%, 93.66% 46.79%, 93.22% 62.53%, 90.97% 73.8%, 85.3% 87.35%, 76.62% 99.69%, 62.72% 97.31%, 45.48% 93.27%, 31.89% 85.2%, 27.64% 71.38%, 19.53% 62.11%, 6.48% 59.84%, 1.24% 50.07%, 4.09% 36.21%, 11.41% 19.4%, 23.01% 7.17%, 38.52% 1.89%, 54.88% 2.04%);
+    background: black;
 }
 .BrainContainer {
-  height: 42vh;
-  width: 55vh;
-  margin-top: 6vh;
-  margin-left: 15vh;
+  height: 42vmin;
+  width: 55vmin;
+  margin-top: 6vmin;
+  margin-left: 15vmin;
   position: absolute;
+}
+
+.rounded {
+  filter: url(#round);
 }
