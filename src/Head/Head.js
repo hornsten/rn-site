@@ -2,6 +2,8 @@ import './Head.css';
 import React from 'react';
 import SongButton from '../SongButton/SongButton';
 import ReactSpring, {useSpring, animated, config} from 'react-spring';
+import styled from "styled-components";
+import audio from '../mp3s/Everything-Sample.mp3';
 
 
 function Head() {
@@ -19,7 +21,8 @@ function Head() {
         width: '40%',
         top: '28%',
         left: '0%',
-        name: 'I See You in My Dreams'
+        name: 'I See You in My Dreams',
+        audioClip: new Audio('/ISYIMD-Sample.mp3')
       },
       {
         id:'moy', 
@@ -28,7 +31,8 @@ function Head() {
         width: '43%',
         top: '32%',
         left: '14%',
-        name: 'Memories of You'
+        name: 'Memories of You',
+        audioClip: new Audio('/MemoriesOfYou-Sample.mp3')        
       },
       {
         id:'everything', 
@@ -37,7 +41,8 @@ function Head() {
         width: '41%',
         top: '56%',
         left: '27%',
-        name: 'Everything'
+        name: 'Everything',
+        audioClip: new Audio('/Everything-Sample.mp3')
       },
       {
         id:'brightside', 
@@ -46,7 +51,8 @@ function Head() {
         width: '32%',
         top: '34%',
         left: '33%',
-        name: 'Bright Side'
+        name: 'Bright Side',
+        audioClip: new Audio('/BrightSide-Sample.mp3')
       },     
       {
         id:'muse', 
@@ -55,16 +61,18 @@ function Head() {
         width: '28%',
         top: '9%',
         left: '61%',
-        name: 'Muse'
+        name: 'Muse',
+        audioClip: new Audio('/Muse-Sample.mp3')
       }, 
       {
         id:'pcbh', 
-        clipPath: 'polygon(49.01% 24.48%, 41.07% 35.43%, 32.4% 47.67%, 23.72% 60.24%, 16.19% 76.02%, 11.88% 90.93%, 26.16% 91.33%, 38.78% 91.16%, 50.76% 92.71%, 61.23% 94.27%, 72.16% 98.44%, 80.45% 100.00%, 80.6% 86.99%, 80.06% 71.6%, 80.1% 54.24%, 80.36% 37.16%, 80.67% 20.07%, 80.82% 0.29%, 68.42% 7.31%, 58.34% 14.74%)',
-        height: '24%',
+        clipPath: 'polygon(53.69% 33.6%, 45.74% 44.26%, 38.01% 54.15%, 31.19% 64.46%, 23.67% 76.52%, 16.56% 88.88%, 29.9% 89.17%, 40.65% 90.18%, 50.76% 90.65%, 61.23% 93.39%, 73.09% 95.21%, 84.19% 100.7%, 85.27% 86.31%, 85.67% 69.54%, 85.70% 54.74%, 85.03% 40.01%, 84.41% 25.56%, 82.69% 11.86%, 71.23% 18.69%, 62.08% 26.22%)',
+        height: '26%',
         width: '25%',
-        top: '7%',
-        left: '5%',
-        name: 'Please Come Back Home'
+        top: '5%',
+        left: '4%',
+        name: 'Please Come Back Home',
+        audioClip: new Audio('/PCBH-Sample.mp3')
       },
       {
         id:'ata', 
@@ -73,7 +81,8 @@ function Head() {
         width: '32%',
         top: '29%',
         left: '62%',
-        name: 'Above the Atmosphere'
+        name: 'Above the Atmosphere',
+        audioClip: new Audio('/ATA-Sample.mp3')
       },
       {
         id:'highwaysigns', 
@@ -82,7 +91,8 @@ function Head() {
         width: '35%',
         top: '63%',
         left: '55%',
-        name: 'Highway Signs'
+        name: 'Highway Signs',
+        audioClip: new Audio('/HighwaySigns-Sample.mp3')
       },
       {
         id:'righton', 
@@ -91,7 +101,8 @@ function Head() {
         width: '16%',
         top: '3%',
         left: '26%',
-        name: 'Right On'
+        name: 'Right On',
+        audioClip: new Audio('/RightOn-Sample.mp3')
       },
       {
         id:'imready', 
@@ -100,7 +111,8 @@ function Head() {
         width: '28%',
         top: '18%',
         left: '40%',
-        name: "I'm Ready"
+        name: "I'm Ready",
+        audioClip: new Audio('/ImReady-Sample.mp3')
       },
       {
         id:'lazyriver', 
@@ -109,16 +121,18 @@ function Head() {
         width: '28%',
         top: '-2%',
         left: '40%',
-        name: 'Lazy River'
+        name: 'Lazy River',
+        audioClip: new Audio('/LazyRiver-Sample.mp3')
       },
       {
         id:'procrastinator', 
-        clipPath: 'polygon(20.47% 3.54%, 31.15% 5.14%, 43.41% 7.21%, 56.28% 9.2%, 69.78% 11.06%, 86.9% 12.32%, 100.5% 14.65%, 99.21% 29.03%, 97.39% 42.92%, 94.6% 55.76%, 90.24% 67.46%, 85.79% 78.15%, 74.8% 71.54%, 62.45% 64.54%, 51.16% 58.05%, 39.22% 52.01%, 28.28% 46.53%, 16.48% 42.42%, 17.43% 28.55%, 18.64% 15.55%)',
+        clipPath: 'polygon(8.79% 16.1%, 22.91% 18.48%, 38.61% 21.33%, 54.22% 23.32%, 70.46% 25.19%, 88.27% 26.45%, 88.81% 37.42%, 87.53% 50.22%, 85.71% 60.97%, 82.91% 73.02%, 79.24% 83.15%, 74.1% 92.28%, 65.86% 88.02%, 54.89% 81.81%, 42.22% 73.75%, 30.28% 66.92%, 17.28% 59.87%, 4.79% 54.97%, 5.75% 41.9%, 6.96% 28.1%)',
         height: '39%',
         width: '34%',
-        top: '48%',
-        left: '59%',
-        name: 'Procrastinator'
+        top: '43%',
+        left: '63%',
+        name: 'Procrastinator',
+        audioClip: new Audio('/Procrastinator-Sample.mp3')
       }
     ]
     const buttons = numbers.map((number, index) =>
@@ -130,7 +144,8 @@ function Head() {
     height={number.height}
     top={number.top}
     left={number.left}
-    width={number.width}>
+    width={number.width}
+    audioClip={number.audioClip}>
     </SongButton>
     );
 
