@@ -9,9 +9,9 @@ import audio from '../mp3s/Everything-Sample.mp3';
 function Head() {
   // const { useState } = React;
   // const [isHeadToggled, setIsHeadToggled] = useState(false);
-  // function handleClick() {
-  //     setIsHeadToggled(!isHeadToggled);  
-  // }
+  function buyAlbum() {
+      console.log('hey, you click me!');
+  }
 
     const numbers = [
       {
@@ -152,6 +152,9 @@ function Head() {
   return (
     
     <div className="Head">
+      <a className="planet" target="blank" href="http://www.rollingnumbers.bandcamp.com">
+        <p className="marquee-text">Buy Album</p>
+      </a>
       <div className="BrainContainer">
         <div className="Brain">
           {buttons}
