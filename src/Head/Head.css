@@ -3,6 +3,7 @@
     height: 75vmin;
     width: 75vmin;
     background-size: cover;
+    position: relative;
    
 }
 .Brain {
@@ -19,7 +20,46 @@
   margin-left: 15vmin;
   position: absolute;
 }
-
-.rounded {
-  filter: url(#round);
+.planet {
+  background: url('../images/neptune-cropped-circle.png');
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+.marquee-text {
+  animation: marquee 5s linear infinite;
+  color: #ff7f00;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 34%;
+  border:none;
+  text-shadow: 
+  
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
