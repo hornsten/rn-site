@@ -53,6 +53,7 @@ function SongButton(props) {
       top: isExpanded ? '0%' : props.top,
       left: isExpanded ? '0%' : props.left,
       color: isExpanded ? '#fff' : 'transparent'
+
     });
     return (
         <>
