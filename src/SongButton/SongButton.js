@@ -6,6 +6,9 @@ import styled from "styled-components";
 function SongButton(props) {
     const { useState, useEffect } = React;
   const [isExpanded, setisExpanded] = useState(false);
+
+  //props.audioClip.addEventListener("ended", clipEnded(), false);
+
   function handleClick(e) {
       //console.log("do nothing")
       
@@ -13,9 +16,22 @@ function SongButton(props) {
       handleAudio();
   }
 
+  function clipEnded() {
+    console.log("clip esnded")
+    
+    handleClick('test');
+  }
+
+  props.audioClip.addEventListener("ended", function(){
+    props.audioClip.currentTime = 0;
+    clipEnded();
+  });
+
   function handleAudio() {
     const start = () => {
-      props.audioClip.play()
+      props.audioClip.play().catch((e)=>{
+        //console.log(e);
+      })
     }
     const stop = () => {
       props.audioClip.pause();
@@ -42,7 +58,7 @@ function SongButton(props) {
     return (
         <>
         <animated.button id={props.id} className={isExpanded? "item toggled" : "item"} style={fade} onClick={handleClick}>
-            {props.name}
+          <p className={isExpanded? "shadow-text" : ""}>{props.name}</p>
         </animated.button>
         </>
       );
