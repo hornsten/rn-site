@@ -6,12 +6,14 @@ import styled from "styled-components";
 import audio from '../mp3s/Everything-Sample.mp3';
 import { useIdleTimer } from 'react-idle-timer'
 
+const thoughtShown = {displayed : false,
+                    shownOnce: false};
 
 function Head() {
   // const { useState } = React;
   // const [isHeadToggled, setIsHeadToggled] = useState(false);
   function buyAlbum() {
-      console.log('hey, you click me!');
+      //console.log('hey, you click me!');
   }
 
     const numbers = [
@@ -150,18 +152,57 @@ function Head() {
     </SongButton>
     );
 
+
+    function fadeInThought() {
+      var element = document.getElementById("thought");
+      var opac = 0.0;
+      //console.log("in fadeInThought() thoughtShown.click: " + thoughtShown.displayed);
+
+      for (let i = 0; i < 10; i++) {
+        setTimeout(function timer() {
+          opac = opac + 0.1;
+          element.style.opacity = opac;
+        }, i * 50);
+      }
+    }
+
+    function fadeOutThought() {
+      var element = document.getElementById("thought");
+      var opac = 1.0;
+      //console.log("in fadeOutThought() thoughtShown.click: " + thoughtShown.displayed);
+
+      for (let i = 0; i < 10; i++) {
+        setTimeout(function timer() {
+          opac = opac - 0.1;
+          element.style.opacity = opac;
+        }, i * 50);
+      }
+    }
+
     const handleOnIdle = event => {
-      console.log('user is idle', event)
-      console.log('last active', getLastActiveTime())
+      //console.log('user is idle - thoughtShown.click: ' + thoughtShown.displayed);
+
+      if (thoughtShown.displayed == false && thoughtShown.shownOnce == false) {
+        fadeInThought();
+        thoughtShown.displayed = true;
+        thoughtShown.shownOnce = true;
+      }
     }
   
     const handleOnActive = event => {
-      console.log('user is active', event)
-      console.log('time remaining', getRemainingTime())
+      //console.log('user is active', event)
+      //console.log('time remaining', getRemainingTime())
     }
   
     const handleOnAction = event => {
-      console.log('user did something', event)
+
+      //if (event.type == 'mousedown') {
+        //console.log('user did something', event);
+        if (thoughtShown.displayed == true) {
+          fadeOutThought();
+          thoughtShown.displayed = false;
+        }
+      //}
     }
   
     const { getRemainingTime, getLastActiveTime } = useIdleTimer({
@@ -177,6 +218,10 @@ function Head() {
     <div className="Head">
       <a className="planet" target="blank" href="http://www.rollingnumbers.bandcamp.com">
         <p className="marquee-text">Buy Album</p>
+      </a>
+      <div className="thoughtBubble" id="thought">
+      </div>
+      <a className="rollingNumbersPlanet" target="blank" href="https://www.facebook.com/rollingnumbersband">
       </a>
       <div className="BrainContainer">
         <div className="Brain">

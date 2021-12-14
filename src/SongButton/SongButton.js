@@ -58,7 +58,7 @@ function SongButton(props) {
     return (
         <>
         <animated.button id={props.id} className={isExpanded? "item toggled" : "item"} style={fade} onClick={handleClick}>
-            {props.name}
+          <p className={isExpanded? "shadow-text" : ""}>{props.name}</p>
         </animated.button>
         </>
       );
