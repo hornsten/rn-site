@@ -216,7 +216,7 @@ function Head() {
   return (
     
     <div className="Head">
-      <a className="planet" target="blank" href="http://www.rollingnumbers.bandcamp.com">
+      <a className="planet" target="blank" href="https://rollingnumbers.bandcamp.com/album/rolling-numbers">
         <p className="marquee-text">Buy Album</p>
       </a>
       <div className="thoughtBubble" id="thought">
